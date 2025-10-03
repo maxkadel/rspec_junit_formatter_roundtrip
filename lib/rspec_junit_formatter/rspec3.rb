@@ -79,6 +79,10 @@ private
     notification.example.full_description
   end
 
+  def example_id_for(notification)
+    notification.example.id
+  end
+
   def failure_type_for(example)
     exception_for(example).class.name
   end

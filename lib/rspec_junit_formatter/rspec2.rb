@@ -40,6 +40,10 @@ private
     example.full_description
   end
 
+  def example_id_for(notification)
+    notification.example.id
+  end
+
   def exception_for(example)
     example.execution_result[:exception]
   end

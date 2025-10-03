@@ -79,6 +79,7 @@ describe RspecJunitFormatter do
       expect(testcase["classname"]).to eql("spec.example_spec")
       expect(testcase["name"]).not_to be_empty
       expect(testcase["time"].to_f).to be > 0
+      expect(testcase["example_id"]).to match(/spec\/example_spec.rb\[\d*/)
     end
 
     # it has successful test cases
